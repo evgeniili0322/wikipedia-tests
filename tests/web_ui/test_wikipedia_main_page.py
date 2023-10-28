@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 from wikipedia_tests.application import app
 
 
-pytestmark = pytest.mark.usefixtures('browser_opt')
+pytestmark = pytest.mark.usefixtures("browser_options")
 
 
 @allure.tag('Web')

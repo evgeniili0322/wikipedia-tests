@@ -6,14 +6,14 @@ from wikipedia_tests.application import app
 from wikipedia_tests.data.search_query import search_query
 
 
-pytestmark = pytest.mark.usefixtures('browser_opt')
+pytestmark = pytest.mark.usefixtures("browser_options")
 
 
 @allure.tag('Web')
 @allure.severity(Severity.BLOCKER)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.severity('Found article')
+@allure.story('Found article')
 @allure.link('https://www.wikipedia.org/ ')
 def test_found_article():
     app.open()
@@ -27,7 +27,7 @@ def test_found_article():
 @allure.severity(Severity.BLOCKER)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.severity('Found article')
+@allure.story('Found multiple articles')
 @allure.link('https://www.wikipedia.org/ ')
 def test_found_multiple_articles():
     app.open()
@@ -41,7 +41,7 @@ def test_found_multiple_articles():
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.severity('No matching results')
+@allure.story('No matching results')
 @allure.link('https://www.wikipedia.org/ ')
 def test_no_matching_results():
     app.open()
