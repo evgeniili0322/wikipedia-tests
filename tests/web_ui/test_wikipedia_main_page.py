@@ -2,7 +2,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from wikipedia_tests.application import app
+from wikipedia_tests.web_application import app
 
 
 pytestmark = pytest.mark.usefixtures("browser_options")

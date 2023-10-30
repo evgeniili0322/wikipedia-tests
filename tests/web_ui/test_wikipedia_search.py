@@ -2,7 +2,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from wikipedia_tests.application import app
+from wikipedia_tests.web_application import app
 from wikipedia_tests.data.search_query import search_query
 
 
