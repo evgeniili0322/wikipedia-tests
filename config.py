@@ -86,8 +86,8 @@ def set_android_driver_options():
         )
 
     if config.app_context.startswith('local'):
-        apk_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tests',
-                                'resources', 'apk', 'app-alpha-universal-release.apk')
+        apk_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                'wikipedia_tests', 'resources', 'apk', 'app-alpha-universal-release.apk')
 
         if config.app_context == 'local_emulator':
             load_dotenv('.env.local_emulator')
