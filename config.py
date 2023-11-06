@@ -41,7 +41,7 @@ def set_browser_options():
         if config.browser == 'firefox' and config.browser_version not in ['97', '98']:
             raise ValueError('This browser version not supported. Available versions: 97, 98')
         if config.browser == 'chrome' and config.browser_version not in ['99', '100']:
-            raise ValueError('This browser version not supported. Available version: 99, 100')
+            raise ValueError('This browser version not supported. Available versions: 99, 100')
 
         selenoid_capabilities = {
             'browserName': config.browser,
