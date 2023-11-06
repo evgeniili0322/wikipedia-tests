@@ -46,6 +46,6 @@ def test_found_multiple_articles():
 def test_no_matching_results():
     app.open()
 
-    app.search.type_search('Python')
+    app.search.type_search(search_query.no_match)
 
     app.search.assert_no_matching_results()
