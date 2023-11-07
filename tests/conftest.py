@@ -56,3 +56,5 @@ def android_driver_options():
 
     if config.app_context == 'bstack':
         attach.attach_bstack_video(session_id, os.getenv('BS_USER_NAME'), os.getenv('BS_ACCESS_KEY'))
+
+    browser.quit()
