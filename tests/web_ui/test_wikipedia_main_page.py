@@ -12,7 +12,7 @@ pytestmark = pytest.mark.usefixtures("browser_options")
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Main page')
-@allure.story('Assert main page title texts')
+@allure.title('Assert main page title texts')
 @allure.link('https://www.wikipedia.org/ ')
 def test_main_page_title_texts():
     app.open()
@@ -24,7 +24,7 @@ def test_main_page_title_texts():
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Main page')
-@allure.story('Assert language list')
+@allure.title('Assert language list')
 @allure.link('https://www.wikipedia.org/ ')
 def test_languages_list():
     app.open()
@@ -38,7 +38,7 @@ def test_languages_list():
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Main page')
-@allure.story('Open mobile application page')
+@allure.title('Open mobile application page')
 @allure.link('https://www.wikipedia.org/ ')
 def test_open_mobile_applications_page():
     app.open()
@@ -52,7 +52,7 @@ def test_open_mobile_applications_page():
 @allure.severity(Severity.NORMAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Main page')
-@allure.story('Open Wiktionary page')
+@allure.title('Open Wiktionary page')
 @allure.link('https://www.wikipedia.org/')
 def test_open_wiktionary_page():
     app.open()

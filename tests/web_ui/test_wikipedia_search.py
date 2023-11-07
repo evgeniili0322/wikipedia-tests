@@ -13,7 +13,7 @@ pytestmark = pytest.mark.usefixtures("browser_options")
 @allure.severity(Severity.BLOCKER)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.story('Found article')
+@allure.title('Found article')
 @allure.link('https://www.wikipedia.org/ ')
 def test_found_article():
     app.open()
@@ -27,7 +27,7 @@ def test_found_article():
 @allure.severity(Severity.BLOCKER)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.story('Found multiple articles')
+@allure.title('Found multiple articles')
 @allure.link('https://www.wikipedia.org/ ')
 def test_found_multiple_articles():
     app.open()
@@ -41,7 +41,7 @@ def test_found_multiple_articles():
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.story('No matching results')
+@allure.title('No matching results')
 @allure.link('https://www.wikipedia.org/ ')
 def test_no_matching_results():
     app.open()

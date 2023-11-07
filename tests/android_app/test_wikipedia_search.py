@@ -15,7 +15,7 @@ app = AndroidApp()
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.story('Verify found article')
+@allure.title('Verify found article')
 @allure.link('https://www.wikipedia.org/ ')
 def test_found_articles():
     app.skip_welcome_screen()
@@ -28,7 +28,7 @@ def test_found_articles():
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Search')
-@allure.story('Open article page')
+@allure.title('Open article page')
 @allure.link('https://www.wikipedia.org/ ')
 def test_open_found_article():
     app.skip_welcome_screen()

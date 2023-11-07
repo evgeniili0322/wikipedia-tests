@@ -14,7 +14,7 @@ app = AndroidApp()
 @allure.severity(Severity.CRITICAL)
 @allure.label('owner', 'Evgenii Li')
 @allure.feature('Onboarding screen')
-@allure.story('Verify onboarding screen')
+@allure.title('Verify onboarding screen')
 @allure.link('https://www.wikipedia.org/ ')
 def test_onboarding_screen_title_texts():
     app.verify_first_page_title()
