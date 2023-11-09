@@ -1,4 +1,5 @@
 import os
+import time
 
 import allure_commons
 import pytest
@@ -58,3 +59,8 @@ def android_driver_options():
         attach.attach_bstack_video(session_id, os.getenv('BS_USER_NAME'), os.getenv('BS_ACCESS_KEY'))
 
     browser.quit()
+
+    @pytest.fixture(autouse=True)
+    def slow_down_tests():
+        yield
+        time.sleep(60)
