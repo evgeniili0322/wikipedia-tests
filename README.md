@@ -129,5 +129,5 @@ Mobile
 #### Все тест кейсы также могут быть прикреплены к задаче в Jira Software
 ![This is an image](design/images/jira.png)
 
-# Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
-![This is an image](design/images/telegram-report.png)
+# Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram
+![This is an image](design/images/telegram-bot-report.png)
