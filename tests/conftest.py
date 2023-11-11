@@ -31,6 +31,8 @@ def browser_options():
 
     browser.quit()
 
+    time.sleep(10)
+
 
 @pytest.fixture(scope='function')
 def android_driver_options():
@@ -57,10 +59,3 @@ def android_driver_options():
 
     if config.app_context == 'bstack':
         attach.attach_bstack_video(session_id, os.getenv('BS_USER_NAME'), os.getenv('BS_ACCESS_KEY'))
-
-    browser.quit()
-
-    @pytest.fixture(autouse=True)
-    def slow_down_tests():
-        yield
-        time.sleep(60)
