@@ -13,23 +13,23 @@ from wikipedia_tests.utils import attach
 
 @pytest.fixture(scope='function')
 def browser_options():
-    browser = set_browser_options()
-    browser.config._wait_decorator = support._logging.wait_with(
+    current_browser = set_browser_options()
+    current_browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext
     )
 
-    yield browser
+    yield current_browser
 
     if config.browser == 'chrome':
-        attach.add_logs(browser)
+        attach.add_logs(current_browser)
 
-    attach.add_screenshot(browser)
-    attach.add_html(browser)
+    attach.add_screenshot(current_browser)
+    attach.add_html(current_browser)
 
     if config.web_context == 'remote':
-        attach.add_video(browser)
+        attach.add_video(current_browser)
 
-    browser.quit()
+    current_browser.quit()
 
     time.sleep(10)
 
